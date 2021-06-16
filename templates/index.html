@@ -7,26 +7,21 @@
 </head>
 <body>
     
-    <div class="box">
+    <div class="container">
 
         <div class="infos">
             <b>Nome: </b> {{nome}} 
             <br>
-            <b>Idade: </b> {{idade}}            
+            <b>Idade: </b> {{idade}}    
         </div>
+        <button id="mudaHumor">Mudar de humor</button>
 
-        {% if emocao %}
-        
-        <img src="../static/img/neySorrindo.jpeg" alt="Neymar sorridente">
-        <p>{{nome}} tá sorrindo</p>
-
-        {% else %}
-
-        <img src="../static/img/neyTriste.jpeg" alt="Neymar triste">
-        <p>Ney tá chorando</p>
-
-
-        {% endif %}
+        <div class="box"> 
+            <img src="../static/img/neyTriste.jpeg" alt="Neymar triste">
+            <p>Ney tá chorando</p>    
+        </div>
+    
     </div>
+    <script src="../static/index.js"></script>
 </body>
 </html>

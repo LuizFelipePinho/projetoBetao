@@ -8,13 +8,11 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0 # serve pro navegador renderizar as 
 def home():
     nome = "Neymar"
     idade = 29
-    emocao = True
 
     return render_template(
     'index.html',
     nome = nome,
     idade = idade,
-    emocao = emocao,
     )
 
 if __name__ == "__main__":
